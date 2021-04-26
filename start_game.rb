@@ -26,5 +26,5 @@ def game_over(player_hash)
       puts "Ciao"
     end
   end
-  exit(0)
+  exit()
 end

@@ -22,9 +22,13 @@ module Questionnaire
       puts "your score is now #{player.score}"
       if player.score <= 0
 
-        player_scores = {}
-        player_scores[player.name] = player.score
-        player_scores[opponent.name] = opponent.score
+        # player_scores = {}
+        # player_scores[player.name] = player.score
+        # player_scores[opponent.name] = opponent.score
+        player_scores = {
+        player.name => player.score,
+        opponent.name => opponent.score
+        }
         game_over(player_scores)
       end
     end

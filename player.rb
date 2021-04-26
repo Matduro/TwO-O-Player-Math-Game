@@ -4,7 +4,7 @@ class Player
 
   def initialize(name)
     @name = name
-    @score = 3
+    @score = 1
   end
 
   def wrong_answer
